@@ -34,14 +34,20 @@ export default function Faq() {
           }}
           className="pt-12 border-[2.5px_solid_rgba(255,255,255,0.6)] shadow-[0px_10px_80px_8px_rgba(12,15,27,0.08)] backdrop-blur-[12px] rounded-[24px] relative z-20"
         >
-          <span className="max-w-[280px] flex items-center justify-between bg-white shadow-md p-2 px-4 rounded-[12px] mx-auto">
+          <span
+            data-aos="fade-down"
+            className="max-w-[280px] flex items-center justify-between bg-white shadow-md p-2 px-4 rounded-[12px] mx-auto"
+          >
             <span>
               <span className="me-2 inline-block h-3 w-3 shadow-md shadow-green-500 bg-green-500 rounded-full border-blue-500"></span>
               <span className="text-sm">Voice.mp3</span>
             </span>
             <span className="me-2 inline-block h-1 w-24 shadow-md bg-neutral-300 rounded-full border-blue-500"></span>
           </span>
-          <h2 className="py-3 text-center font-extrabold xl:leading-[65px] text-3xl md:text-4xl xl:text-[50px]">
+          <h2
+            data-aos="fade-down"
+            className="py-3 text-center font-extrabold xl:leading-[65px] text-3xl md:text-4xl xl:text-[50px]"
+          >
             Frequently asked
             <span className="ms-3 bg-gradient-to-l from-[#EF3959] to-[#2563EB] text-transparent bg-clip-text">
               questions

@@ -1,10 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const currentPath = usePathname();
+
   return (
     <div className="px-4 xl:px-0 py-8 xl:py-16 relative" style={{ zIndex: 99 }}>
-      <div className="border-b-2 mb-12 xl:mb-16 border-[#00000060] max-w-[1296px] mx-auto"></div>
+      {currentPath != "/features" && (
+        <div className="border-b-2 mb-12 xl:mb-16 border-[#00000060] max-w-[1296px] mx-auto"></div>
+      )}
 
       <div className="max-w-[1296px] mx-auto relative z-20 font-inter">
         <div className="grid md:grid-cols-3 gap-6 md:gap-12">

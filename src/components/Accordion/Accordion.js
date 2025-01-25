@@ -11,7 +11,11 @@ const Accordion = ({ data }) => {
   return (
     <div className="space-y-4">
       {data.map((item, index) => (
-        <div key={index} className="pb-3 overflow-hidden border-b">
+        <div
+          data-aos="fade-down"
+          key={index}
+          className="pb-3 overflow-hidden border-b"
+        >
           <button
             onClick={() => handleToggle(index)}
             className="w-full text-left p-2 text-black text-lg md:text-xl font-semibold flex justify-between items-center"

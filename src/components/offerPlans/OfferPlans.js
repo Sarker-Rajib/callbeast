@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Faq from "../Faq/Faq";
+import GradientText from "../ui/GradientText";
 
 export default function OfferPlans() {
   return (
@@ -9,13 +10,17 @@ export default function OfferPlans() {
         {/* features section */}
         <div className="features relative z-20">
           <Image
+            data-aos="fade-left"
             className="w-[120px] lg:w-[215px]"
             src="/images/logo-b.svg"
             width={215}
             height={40}
             alt="group"
           />
-          <h2 className="py-3 font-extrabold xl:leading-[65px] text-2xl md:text-4xl xl:text-[50px]">
+          <h2
+            data-aos="fade-right"
+            className="py-3 font-extrabold xl:leading-[65px] text-2xl md:text-4xl xl:text-[50px]"
+          >
             The
             <span className="mx-3 font-extrabold bg-gradient-to-l from-[#EF3959] to-[#2563EB] text-transparent bg-clip-text">
               fully featured platform
@@ -27,7 +32,7 @@ export default function OfferPlans() {
 
           <div className="grid md:grid-cols-2 gap-7 pt-8">
             <div>
-              <div className="flex pb-4">
+              <div data-aos="fade-up" className="flex pb-4">
                 <div className="p-1 pe-3">
                   <Image
                     className="min-w-[50px] md:min-w-[60px]"
@@ -48,7 +53,7 @@ export default function OfferPlans() {
                   </p>
                 </div>
               </div>
-              <div className="flex pb-4">
+              <div data-aos="fade-up" className="flex pb-4">
                 <div className="p-1 pe-3">
                   <Image
                     className="min-w-[50px] md:min-w-[60px]"
@@ -69,7 +74,7 @@ export default function OfferPlans() {
                   </p>
                 </div>
               </div>
-              <div className="flex pb-4">
+              <div data-aos="fade-up" className="flex pb-4">
                 <div className="p-1 pe-3">
                   <Image
                     className="min-w-[50px] md:min-w-[60px]"
@@ -90,7 +95,7 @@ export default function OfferPlans() {
                   </p>
                 </div>
               </div>
-              <div className="flex pb-4">
+              <div data-aos="fade-up" className="flex pb-4">
                 <div className="p-1 pe-3">
                   <Image
                     className="min-w-[50px] md:min-w-[60px]"
@@ -113,7 +118,10 @@ export default function OfferPlans() {
               </div>
             </div>
 
-            <div className="p-[45px] bg-white shadow-[0px_0px_10px_2px_rgba(20,20,43,0.08)] rounded-[45px] relative overflow-hidden">
+            <div
+              data-aos="fade-left"
+              className="p-[45px] bg-white shadow-[0px_0px_10px_2px_rgba(20,20,43,0.08)] rounded-[45px] relative overflow-hidden"
+            >
               <p className="font-inter text-sm">
                 <span className="inline-block w-3 h-3 bg-green-600 rounded-full me-3 shadow-md shadow-green-500"></span>
                 "I want to speak with a consultant"
@@ -173,7 +181,10 @@ export default function OfferPlans() {
 
         {/* plans */}
         <div className="plans pb-24">
-          <h2 className="py-3 text-center font-extrabold xl:leading-[65px] text-2xl md:text-4xl xl:text-[50px]">
+          <h2
+            data-aos="fade-up"
+            className="py-3 text-center font-extrabold xl:leading-[65px] text-2xl md:text-4xl xl:text-[50px]"
+          >
             Ready to start
             <br className="hidden lg:block" />
             automating phone
@@ -183,7 +194,10 @@ export default function OfferPlans() {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4 md:pt-12 xl:pt-36">
-            <div className="p-[60px_40px] font-sans bg-white border-[1px_solid_#EFF0F7] shadow-[0px_2px_12px_rgba(20,20,43,0.08)] rounded-[25px]">
+            <div
+              data-aos="fade-right"
+              className="p-[60px_40px] font-sans bg-white border-[1px_solid_#EFF0F7] shadow-[0px_2px_12px_rgba(20,20,43,0.08)] rounded-[25px]"
+            >
               <div className="flex items-start">
                 <Image
                   src="/images/offernplan/ic1.svg"
@@ -238,13 +252,26 @@ export default function OfferPlans() {
                   href="/"
                   className="inline-block w-full px-[20px] py-[14px] text-center font-inter text-white bg-gradient-to-b from-[#779DFF] to-[#2D68FF] backdrop-blur-[25px] rounded-[25px] font-semibold"
                 >
-                  Choose Pro Plan
-                  <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                  <GradientText
+                    colors={[
+                      "#40ffaa",
+                      "#000000",
+                      "#40ffaa",
+                      "#dddddd",
+                      "#40ffaa",
+                    ]}
+                    animationSpeed={3}
+                    showBorder={false}
+                    className="pe-2 font-semibold"
+                  >
+                    Choose Pro Plan
+                    <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                  </GradientText>
                 </Link>
               </div>
             </div>
 
-            <div className="lg:pb-8">
+            <div data-aos="fade-up" className="lg:pb-8">
               <div className="lg:mt-[-40px] p-[60px_40px] font-sans text-white border-[1px_solid_#EFF0F7] bg-[#2563EB] shadow-[0px_2px_12px_rgba(20,20,43,0.08) rounded-[25px]">
                 <div className="flex items-start">
                   <Image
@@ -303,14 +330,30 @@ export default function OfferPlans() {
                     href="/"
                     className="p-[16px_14px_16px_17px] bg-gradient-to-b from-[#D1D7ED] to-[#FFFFFF] backdrop-blur-[25px] rounded-[25px] text-black w-full inline-block font-semibold font-inter"
                   >
-                    Choose Agency Plan
-                    <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                    <GradientText
+                      colors={[
+                        "#40ffaa",
+                        "#000000",
+                        "#40ffaa",
+                        "#dddddd",
+                        "#40ffaa",
+                      ]}
+                      animationSpeed={3}
+                      showBorder={false}
+                      className="pe-2 font-semibold"
+                    >
+                      Choose Agency Plan
+                      <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                    </GradientText>
                   </Link>
                 </div>
               </div>
             </div>
 
-            <div className="p-[60px_40px] font-sans bg-white border-[1px_solid_#EFF0F7] shadow-[0px_2px_12px_rgba(20,20,43,0.08)] rounded-[25px]">
+            <div
+              data-aos="fade-left"
+              className="p-[60px_40px] font-sans bg-white border-[1px_solid_#EFF0F7] shadow-[0px_2px_12px_rgba(20,20,43,0.08)] rounded-[25px]"
+            >
               <div className="flex items-start">
                 <Image
                   src="/images/offernplan/ic3.svg"
@@ -373,8 +416,21 @@ export default function OfferPlans() {
                   href="/"
                   className="inline-block font-inter w-full px-[20px] py-[14px] text-center text-white bg-gradient-to-b from-[#779DFF] to-[#2D68FF] backdrop-blur-[25px] rounded-[25px] font-semibold"
                 >
-                  Choose White-label Plan
-                  <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                  <GradientText
+                    colors={[
+                      "#40ffaa",
+                      "#000000",
+                      "#40ffaa",
+                      "#dddddd",
+                      "#40ffaa",
+                    ]}
+                    animationSpeed={3}
+                    showBorder={false}
+                    className="pe-2 font-semibold"
+                  >
+                    Choose White-label Plan
+                    <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                  </GradientText>
                 </Link>
               </div>
             </div>

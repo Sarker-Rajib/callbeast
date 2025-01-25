@@ -1,11 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import GradientText from "../ui/GradientText";
+import CountUp from "../ui/countUp";
 
 export default function Details() {
   return (
     <div className="py-12 md:py-20 xl:pt-28 relative px-4 xl:px-0">
       <div className="max-w-[1296px] mx-auto relative z-20">
-        <h2 className="pb-8 font-extrabold xl:leading-[65px] text-3xl md:text-4 xl:text-[50px] text-center">
+        <h2
+          data-aos="fade-left"
+          className="pb-8 font-extrabold xl:leading-[65px] text-3xl md:text-4 xl:text-[50px] text-center"
+        >
           Voice AI that's ready to take phone <br className="hidden lg:block" />
           <span className="font-extrabold bg-gradient-to-l from-[#EF3959] to-[#2563EB] text-transparent bg-clip-text">
             calls off your hands
@@ -13,7 +18,10 @@ export default function Details() {
         </h2>
 
         <div className="py-6 xl:py-9 grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
-          <div className="relative p-[10px] border rounded-[25px] overflow-hidden">
+          <div
+            data-aos="fade-up"
+            className="relative p-[10px] border rounded-[25px] overflow-hidden"
+          >
             <div
               className="p-[40px] md:min-h-[390px] h-full bg-[#ffffff88] rounded-[25px] backdrop-blur-[25px] relative z-20
                         shadow-[0px_40px_80px_-15px_rgba(0,0,0,0.075),0px_2px_0.6px_-2.5px_rgba(0,0,0,0.25),0px_30.3264px_30.3264px_-20.2176px_rgba(8,8,8,0.04),0px_7.58161px_16.4268px_rgba(8,8,8,0.03),0px_7.58161px_5.05441px_-5.05441px_rgba(8,8,8,0.05),0px_6.31801px_1.8954px_-5.05441px_rgba(8,8,8,0.05)]"
@@ -50,7 +58,10 @@ export default function Details() {
             />
           </div>
 
-          <div className="relative p-[10px] border rounded-[25px] overflow-hidden">
+          <div
+            data-aos="fade-up"
+            className="relative p-[10px] border rounded-[25px] overflow-hidden"
+          >
             <div
               className="p-[40px] md:min-h-[390px] h-full bg-[#ffffff88] rounded-[25px] backdrop-blur-[25px] relative z-20
                         shadow-[0px_40px_80px_-15px_rgba(0,0,0,0.075),0px_2px_0.6px_-2.5px_rgba(0,0,0,0.25),0px_30.3264px_30.3264px_-20.2176px_rgba(8,8,8,0.04),0px_7.58161px_16.4268px_rgba(8,8,8,0.03),0px_7.58161px_5.05441px_-5.05441px_rgba(8,8,8,0.05),0px_6.31801px_1.8954px_-5.05441px_rgba(8,8,8,0.05)]"
@@ -86,7 +97,10 @@ export default function Details() {
             />
           </div>
 
-          <div className="relative p-[10px] border rounded-[25px] overflow-hidden">
+          <div
+            data-aos="fade-up"
+            className="relative p-[10px] border rounded-[25px] overflow-hidden"
+          >
             <div
               className="p-[40px] md:min-h-[390px] h-full bg-[#ffffff88] rounded-[25px] backdrop-blur-[25px] relative z-20
                         shadow-[0px_40px_80px_-15px_rgba(0,0,0,0.075),0px_2px_0.6px_-2.5px_rgba(0,0,0,0.25),0px_30.3264px_30.3264px_-20.2176px_rgba(8,8,8,0.04),0px_7.58161px_16.4268px_rgba(8,8,8,0.03),0px_7.58161px_5.05441px_-5.05441px_rgba(8,8,8,0.05),0px_6.31801px_1.8954px_-5.05441px_rgba(8,8,8,0.05)]"
@@ -137,6 +151,7 @@ export default function Details() {
             }}
           >
             <Image
+              data-aos="fade-left"
               className="m-auto w-60 md:w-72 xl:w-[400px]"
               src="/images/language/fire.png"
               width={400}
@@ -146,7 +161,15 @@ export default function Details() {
 
             <h2 className="mt-[-30px] font-extrabold xl:leading-[65px] text-3xl md:text-4 xl:text-[50px] text-center ">
               <span className="mx-3 font-extrabold bg-gradient-to-l from-[#EF3959] to-[#2563EB] text-transparent bg-clip-text">
-                40+ languages
+                <CountUp
+                  from={0}
+                  to={40}
+                  separator=","
+                  direction="up"
+                  duration={1}
+                  className="count-up-text"
+                />
+                + languages
               </span>
               to choose from
             </h2>
@@ -201,8 +224,21 @@ export default function Details() {
 
               <div className="text-center py-6">
                 <button className="shadow-sm inline-block px-[26px] py-[14px] text-center text-white items-center bg-gradient-to-b from-[#779DFF] to-[#2D68FF] backdrop-blur-[25px] rounded-[25px] font-semibold">
-                  Play Voice Sample
-                  <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                  <GradientText
+                    colors={[
+                      "#40ffaa",
+                      "#000000",
+                      "#40ffaa",
+                      "#dddddd",
+                      "#40ffaa",
+                    ]}
+                    animationSpeed={3}
+                    showBorder={false}
+                    className="pe-2 font-semibold"
+                  >
+                    Play Voice Sample
+                    <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                  </GradientText>
                 </button>
               </div>
             </div>
@@ -235,7 +271,10 @@ export default function Details() {
         <div className="py-6 xl:py-9">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <div className="bg-white shadow-[0px_0px_15px_5px_rgba(20,20,43,0.08)] rounded-[45px]">
+              <div
+                data-aos="fade-up"
+                className="bg-white shadow-[0px_0px_15px_5px_rgba(20,20,43,0.08)] rounded-[45px]"
+              >
                 <Image
                   className="w-96 lg:w-full mx-auto"
                   src="/images/details/int1.png"
@@ -245,7 +284,10 @@ export default function Details() {
                 />
               </div>
 
-              <h2 className="py-4 lg:py-8 font-extrabold lg:leading-[50px] text-3xl lg:text-[40px]">
+              <h2
+                data-aos="fade-right"
+                className="py-4 lg:py-8 font-extrabold lg:leading-[50px] text-3xl lg:text-[40px]"
+              >
                 <span className="me-3 font-extrabold bg-gradient-to-l from-[#EF3959] to-[#2563EB] text-transparent bg-clip-text">
                   Automate
                 </span>
@@ -275,13 +317,29 @@ export default function Details() {
                 href="/"
                 className="inline-block px-[26px] py-[14px] text-center text-white items-center bg-gradient-to-b from-[#779DFF] to-[#2D68FF] backdrop-blur-[25px] rounded-[25px] font-semibold"
               >
-                Learn more
-                <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                <GradientText
+                  colors={[
+                    "#40ffaa",
+                    "#000000",
+                    "#40ffaa",
+                    "#dddddd",
+                    "#40ffaa",
+                  ]}
+                  animationSpeed={3}
+                  showBorder={false}
+                  className="pe-2 font-semibold"
+                >
+                  Learn more
+                  <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                </GradientText>
               </Link>
             </div>
 
             <div>
-              <div className="bg-white shadow-[0px_0px_15px_5px_rgba(20,20,43,0.08)] rounded-[45px]">
+              <div
+                data-aos="fade-up"
+                className="bg-white shadow-[0px_0px_15px_5px_rgba(20,20,43,0.08)] rounded-[45px]"
+              >
                 <Image
                   className="w-96 lg:w-full mx-auto"
                   src="/images/details/int2.png"
@@ -291,7 +349,10 @@ export default function Details() {
                 />
               </div>
 
-              <h2 className="py-4 lg:py-8 font-extrabold lg:leading-[50px] text-3xl lg:text-[40px]">
+              <h2
+                data-aos="fade-right"
+                className="py-4 lg:py-8 font-extrabold lg:leading-[50px] text-3xl lg:text-[40px]"
+              >
                 Cold calling for sales, <br className="hidden lg:block" />
                 <span className="me-3 font-extrabold bg-gradient-to-l from-[#EF3959] to-[#2563EB] text-transparent bg-clip-text">
                   powered by AI
@@ -317,8 +378,21 @@ export default function Details() {
                 href="/"
                 className="inline-block px-[26px] py-[14px] text-center text-white items-center bg-gradient-to-b from-[#779DFF] to-[#2D68FF] backdrop-blur-[25px] rounded-[25px] font-semibold"
               >
-                Get Started today
-                <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                <GradientText
+                  colors={[
+                    "#40ffaa",
+                    "#000000",
+                    "#40ffaa",
+                    "#dddddd",
+                    "#40ffaa",
+                  ]}
+                  animationSpeed={3}
+                  showBorder={false}
+                  className="pe-2 font-semibold"
+                >
+                  Get Started today
+                  <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+                </GradientText>
               </Link>
             </div>
           </div>

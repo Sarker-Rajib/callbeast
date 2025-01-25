@@ -5,7 +5,10 @@ export default function IndustriAi() {
     <div>
       <div className="py-12 xl:py-20 relative px-4 xl:px-0">
         <div className="max-w-[1296px] mx-auto relative z-20">
-          <h2 className="pb-8 text-center font-extrabold xl:leading-[65px] text-3xl md:text-4xl xl:text-[50px]">
+          <h2
+            data-aos="fade-up"
+            className="pb-8 text-center font-extrabold xl:leading-[65px] text-3xl md:text-4xl xl:text-[50px]"
+          >
             Industries leveraging
             <span className="ms-3 bg-gradient-to-l from-[#EF3959] to-[#2563EB] text-transparent bg-clip-text">
               voice AI agents
@@ -13,7 +16,10 @@ export default function IndustriAi() {
           </h2>
           <br className="hidden lg:block" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            <div className="relative p-[10px] border rounded-[25px] overflow-hidden">
+            <div
+              data-aos="fade-up"
+              className="relative p-[10px] border rounded-[25px] overflow-hidden"
+            >
               <div className="p-6 md:px-7 md:py-11 h-full bg-[#ffffff88] rounded-[25px] backdrop-blur-[25px] relative z-20 shadow-[0px_40px_80px_-15px_rgba(0,0,0,0.075),0px_2px_0.6px_-2.5px_rgba(0,0,0,0.25),0px_30.3264px_30.3264px_-20.2176px_rgba(8,8,8,0.04),0px_7.58161px_16.4268px_rgba(8,8,8,0.03),0px_7.58161px_5.05441px_-5.05441px_rgba(8,8,8,0.05),0px_6.31801px_1.8954px_-5.05441px_rgba(8,8,8,0.05)]">
                 <Image
                   src="/images/indus/re.svg"
@@ -47,7 +53,10 @@ export default function IndustriAi() {
               />
             </div>
 
-            <div className="relative p-[10px] border rounded-[25px] overflow-hidden">
+            <div
+              data-aos="fade-up"
+              className="relative p-[10px] border rounded-[25px] overflow-hidden"
+            >
               <div className="p-6 md:px-7 md:py-11 h-full bg-[#ffffff88] rounded-[25px] backdrop-blur-[25px] relative z-20 shadow-[0px_40px_80px_-15px_rgba(0,0,0,0.075),0px_2px_0.6px_-2.5px_rgba(0,0,0,0.25),0px_30.3264px_30.3264px_-20.2176px_rgba(8,8,8,0.04),0px_7.58161px_16.4268px_rgba(8,8,8,0.03),0px_7.58161px_5.05441px_-5.05441px_rgba(8,8,8,0.05),0px_6.31801px_1.8954px_-5.05441px_rgba(8,8,8,0.05)]">
                 <Image
                   src="/images/indus/os.svg"
@@ -81,7 +90,10 @@ export default function IndustriAi() {
               />
             </div>
 
-            <div className="relative p-[10px] border rounded-[25px] overflow-hidden">
+            <div
+              data-aos="fade-up"
+              className="relative p-[10px] border rounded-[25px] overflow-hidden"
+            >
               <div className="p-6 md:px-7 md:py-11 h-full bg-[#ffffff88] rounded-[25px] backdrop-blur-[25px] relative z-20 shadow-[0px_40px_80px_-15px_rgba(0,0,0,0.075),0px_2px_0.6px_-2.5px_rgba(0,0,0,0.25),0px_30.3264px_30.3264px_-20.2176px_rgba(8,8,8,0.04),0px_7.58161px_16.4268px_rgba(8,8,8,0.03),0px_7.58161px_5.05441px_-5.05441px_rgba(8,8,8,0.05),0px_6.31801px_1.8954px_-5.05441px_rgba(8,8,8,0.05)]">
                 <Image
                   src="/images/indus/me.svg"
@@ -115,7 +127,10 @@ export default function IndustriAi() {
               />
             </div>
 
-            <div className="relative p-[10px] border rounded-[25px] overflow-hidden">
+            <div
+              data-aos="fade-up"
+              className="relative p-[10px] border rounded-[25px] overflow-hidden"
+            >
               <div className="p-6 md:px-7 md:py-11 h-full bg-[#ffffff88] rounded-[25px] backdrop-blur-[25px] relative z-20 shadow-[0px_40px_80px_-15px_rgba(0,0,0,0.075),0px_2px_0.6px_-2.5px_rgba(0,0,0,0.25),0px_30.3264px_30.3264px_-20.2176px_rgba(8,8,8,0.04),0px_7.58161px_16.4268px_rgba(8,8,8,0.03),0px_7.58161px_5.05441px_-5.05441px_rgba(8,8,8,0.05),0px_6.31801px_1.8954px_-5.05441px_rgba(8,8,8,0.05)]">
                 <Image
                   src="/images/indus/se.svg"

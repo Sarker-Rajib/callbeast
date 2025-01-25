@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import GradientText from "../ui/GradientText";
 
 const navItems = [
   {
@@ -62,7 +63,22 @@ export default function Header() {
             className="px-[16px] py-[14px] mr-3 my-2 flex items-center bg-gradient-to-b from-[#779DFF] to-[#2D68FF] backdrop-blur-[25px] rounded-[25px] font-semibold"
             href="/"
           >
-            <span className="hidden md:block">Start free</span> Trial
+            <GradientText
+              colors={["#40ffaa", "#000000", "#40ffaa", "#dddddd", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="md:hidden"
+            >
+              Trial
+            </GradientText>
+            <GradientText
+              colors={["#40ffaa", "#000000", "#40ffaa", "#dddddd", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="hidden md:block"
+            >
+              Start free Trial
+            </GradientText>
             <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
           </Link>
 

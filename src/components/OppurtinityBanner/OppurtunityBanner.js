@@ -1,4 +1,5 @@
 import Image from "next/image";
+import GradientText from "../ui/GradientText";
 
 export default function Oppurtunity() {
   return (
@@ -11,9 +12,12 @@ export default function Oppurtunity() {
           height={120}
           alt="logos"
         />
-        <h2 className="pb-8 pt-2 text-white font-extrabold xl:leading-[95px] text-5xl md:text-6xl xl:text-[85px] text-center ">
+        <h2
+          data-aos="fade-left"
+          className="pb-8 pt-2 text-white font-extrabold xl:leading-[95px] text-5xl md:text-6xl xl:text-[85px] text-center "
+        >
           Don't miss the voice
-          <br className="hidden lg:block"/>
+          <br className="hidden lg:block" />
           <span className="font-extrabold bg-gradient-to-l from-[#EF3959] to-[#2563EB] text-transparent bg-clip-text">
             AI opportunity
           </span>
@@ -21,8 +25,15 @@ export default function Oppurtunity() {
 
         <div className="text-center py-6">
           <button className="shadow-sm inline-block px-[26px] py-[14px] text-center text-white items-center bg-gradient-to-b from-[#779DFF] to-[#2D68FF] backdrop-blur-[25px] rounded-[25px] font-semibold">
-            Book a free consultation
-            <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+            <GradientText
+              colors={["#40ffaa", "#000000", "#40ffaa", "#dddddd", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="pe-2 font-semibold"
+            >
+              Book a free consultation
+              <span className="ml-1 inline-block h-2 w-2 border-r-2 border-b-2 -rotate-45"></span>
+            </GradientText>
           </button>
         </div>
       </div>
